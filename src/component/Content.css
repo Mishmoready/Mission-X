@@ -1,0 +1,66 @@
+/* stPrLiCo = studentProjectLibraryContent */
+/* .stPrLiCo {
+  margin-right: 300px;
+} */
+
+.stPrLiCoContainerSideFilter p {
+  text-transform: uppercase;
+}
+
+.stPrLiCoMain {
+  display: flex;
+  justify-content: center;
+}
+
+.stPrLiCoContainerSideFilter {
+  display: flex;
+  flex-direction: column;
+  /* margin-left: auto; */
+  margin-right: 50px;
+}
+
+.stPrLiCoSquareContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px 50px;
+  justify-content: start;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+
+.stPrLiCoSquareContainer div {
+  flex: 1 1 160px;
+  aspect-ratio: 5;
+  border-radius: 20px;
+  opacity: 1;
+  border-radius: 25px;
+  background: none;
+  top: 400px;
+  left: 550px;
+  width: 320px;
+  height: 230px;
+}
+
+.stPrLiCoShowFilterBars p {
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.stPrLiCoTopBars {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.stPrLiCoShowFilterBars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.stPrLiCoDifficultyFilterBars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
