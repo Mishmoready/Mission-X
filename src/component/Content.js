@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Content.css";
 import Project01 from "./images/Project01.png";
 import Project02 from "./images/Project02.png";
@@ -23,61 +23,6 @@ export default function Content() {
     <div className="stPrLiCo">
       {/* Created few buttons for the difficulty filters and show per page */}
       <div className="stPrLiCoMain">
-        {/* The side filter */}
-        <div className="stPrLiCoContainerSideFilter">
-          <div className="stPrLiCoSideFilter">
-            <div className="stPrLiCoSubscription">
-              <p className="stPrLiCoParaTag">subscription</p>
-              <hr></hr>
-              <a href="subscriptionFree">Free</a>
-              <br></br>
-              <a href="subscriptionPremium">Premium</a>
-            </div>
-            <div className="stPrLiCoActivityType">
-              <p>Activity Type</p>
-              <hr></hr>
-              <a href="stPrLiCoActivityTypeAnimation">Animation</a>
-              <br></br>
-              <a href="stPrLiCoActivityTypeGame">Game</a>
-              <br></br>
-              <a href="stPrLiCoActivityTypeChatbot">Chatbot</a>
-              <br></br>
-              <a href="stPrLiCoActivityTypeAugmentedReality">
-                Augmented Reality
-              </a>
-              <div className="stPrLiCoSubjectMatter">
-                <p>Subject Matter</p>
-                <hr></hr>
-                <a href="stPrLiCoSubjectMatterComputerScience">
-                  Computer Science
-                </a>
-                <br></br>
-                <a href="stPrLiCoSubjectMatterMaths">Maths</a>
-                <br></br>
-                <a href="stPrLiCoSubjectMatterScience">Science</a>
-                <br></br>
-                <a href="stPrLiCoSubjectMatterLanguage">Language</a>
-                <br></br>
-                <a href="stPrLiCoSubjectMatterArt">Art</a>
-                <br></br>
-                <a href="stPrLiCoSubjectMatterMusic">Music</a>
-                <br></br>
-              </div>
-            </div>
-          </div>
-          <div className="stPrLiCoYearLevel">
-            <p>Year Level</p>
-            <hr></hr>
-            <a href="aPLC14">1-4</a>
-            <br></br>
-            <a href="aPLC56">5-6</a>
-            <br></br>
-            <a href="aPLC78">7-8</a>
-            <br></br>
-            <a href="aPLC913">9-13</a>
-            <br></br>
-          </div>
-        </div>
         <div stPrLiCoSquareContainerWrapper>
           <div className="stPrLiCoTopBars">
             {/* Difficulty Bars */}
@@ -88,7 +33,7 @@ export default function Content() {
             </div>
             {/* Created Show Filter Bars */}
             <div className="stPrLiCoShowFilterBars">
-              <p>show</p>
+              <p className="stPrLiCoTitle">show</p>
               <button onClick="stPrLiCoShowFilterBars5">5</button>
               <button onClick="stPrLiCoShowFilterBars10">10</button>
               <button onClick="stPrLiCoShowFilterBarsAll">All</button>
@@ -97,7 +42,8 @@ export default function Content() {
           {/* 15 Square Containers */}
           <div className="stPrLiCoSquareContainer">
             <div>
-              <img src={Project01} alt="Picture1" /> Introduction
+              <img src={Project01} alt="Picture1" className="image1" />
+              <span className="text1">Introduction</span>
             </div>
             <div>
               <img src={Project02} alt="Picture2" /> My Birthday

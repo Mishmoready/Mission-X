@@ -1,0 +1,11 @@
+.StPrLiCoSideFilter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.SideFilterP {
+  text-decoration: underline;
+  padding-bottom: 5px;
+  text-decoration-skip-ink: none;
+}

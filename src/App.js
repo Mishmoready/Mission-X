@@ -7,10 +7,14 @@ import BottomSection from "./component/BottomSection";
 export default function App() {
   return (
     <div className="App">
-      <div>
+      <div className="Header">
         <Header></Header>
-        <Content></Content>
-        <SideFilter></SideFilter>
+        <div className="MiddleContent">
+          <div className="SideFilter">
+            <SideFilter></SideFilter>
+          </div>
+          <Content></Content>
+        </div>
         <BottomSection></BottomSection>
       </div>
     </div>
