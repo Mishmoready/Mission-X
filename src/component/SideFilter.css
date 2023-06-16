@@ -9,3 +9,7 @@
   padding-bottom: 5px;
   text-decoration-skip-ink: none;
 }
+
+input[type="checkbox"] {
+  margin-right: 20px;
+}

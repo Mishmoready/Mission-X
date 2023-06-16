@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Content.css";
 import Project01 from "./images/Project01.png";
 import Project02 from "./images/Project02.png";
@@ -19,7 +19,7 @@ import Project15 from "./images/Project15.png";
 // stPrLiCo = studentProjectLibraryContent
 export default function Content() {
   return (
-    // Created the main content in a seperate component//
+    // Created the main content in a separate component//
     <div className="stPrLiCo">
       {/* Created few buttons for the difficulty filters and show per page */}
       <div className="stPrLiCoMain">
@@ -27,9 +27,10 @@ export default function Content() {
           <div className="stPrLiCoTopBars">
             {/* Difficulty Bars */}
             <div className="stPrLiCoDifficultyFilterBars">
-              <button onClick="stPrLiCoBeginner">Beginner </button>
-              <button onClick="stPrLiCoIntermediate>">Intermediate </button>
-              <button onClick="stPrLiCoAdvanced">Advanced</button>
+              <button onClick="btn stPrLiCoBeginner">Beginner </button>
+              <button onClick="btn stPrLiCoIntermediate>">Intermediate </button>
+              <button onClick="btn stPrLiCoAdvanced">Advanced</button>
+              <button onClick="btn stPrLiCoUnknown">???</button>
             </div>
             {/* Created Show Filter Bars */}
             <div className="stPrLiCoShowFilterBars">
@@ -41,53 +42,119 @@ export default function Content() {
           </div>
           {/* 15 Square Containers */}
           <div className="stPrLiCoSquareContainer">
-            <div>
+            <div className="stPrLiCoInnerSquareContainer">
               <img src={Project01} alt="Picture1" className="image1" />
-              <span className="text1">Introduction</span>
+              <p className="text1">
+                Introduction
+                <br />
+                Beginner | Animation
+              </p>
             </div>
             <div>
-              <img src={Project02} alt="Picture2" /> My Birthday
+              <img src={Project02} alt="Picture2" />
+              <p className="text1">
+                My Birthday
+                <br />
+                Beginner | Animation
+              </p>
             </div>
             <div>
-              <img src={Project03} alt="Picture3" /> 10 Block Challenge
+              <img src={Project03} alt="Picture3" />{" "}
+              <p className="text1">
+                10 Block Challenge
+                <br />
+                Beginner | Animation
+              </p>
             </div>
             <div>
-              <img src={Project04} alt="Picture4" /> Build a band
+              <img src={Project04} alt="Picture4" /> Build a band{" "}
+              <p className="text1">
+                My Birthday
+                <br />
+                Beginner | Animation
+              </p>
             </div>
             <div>
-              <img src={Project05} alt="Picture5" /> The Bear and the Monkey
+              <img src={Project05} alt="Picture5" /> The Bear and the Monkey{" "}
+              <p className="text1">
+                My Birthday
+                <br />
+                Beginner | Animation
+              </p>
             </div>
             <div>
-              <img src={Project06} alt="Picture6" /> Debugging
+              <img src={Project06} alt="Picture6" /> Debugging{" "}
+              <p className="text1">
+                My Birthday
+                <br />
+                Beginner | Animation
+              </p>
             </div>
             <div>
-              <img src={Project07} alt="Picture7" /> About me
+              <img src={Project07} alt="Picture7" /> About me{" "}
+              <p className="text1">
+                My Birthday
+                <br />
+                Beginner | Animation
+              </p>
             </div>
             <div>
-              <img src={Project08} alt="Picture8" /> I am here!
+              <img src={Project08} alt="Picture8" /> I am here!{" "}
+              <p className="text1">
+                My Birthday
+                <br />
+                Beginner | Animation
+              </p>
             </div>
             <div>
-              <img src={Project09} alt="Picture9" /> Funny Faces
+              <img src={Project09} alt="Picture9" /> Funny Faces{" "}
+              <p className="text1">
+                My Birthday
+                <br />
+                Beginner | Animation
+              </p>
             </div>
             <div>
-              <img src={Project10} alt="Picture10" /> It Tickles
+              <img src={Project10} alt="Picture10" />
+              <p className="text1">
+                It Tickles <br />
+                Beginner | Animation
+              </p>
             </div>
             <div>
-              <img src={Project11} alt="Picture11" /> Penguin in a Desert
+              <img src={Project11} alt="Picture11" />
+              <p className="text1">
+                Penguin in a Desert <br />
+                Intermediate | Game
+              </p>
             </div>
             <div>
-              <img src={Project12} alt="Picture12" /> Time Travel
+              <img src={Project12} alt="Picture12" />
+              <p className="text1">
+                Time Travel <br />
+                Intermediate | Game
+              </p>
             </div>
             <div>
-              <img src={Project13} alt="Picture13" /> Birthday Card
+              <img src={Project13} alt="Picture13" />
+              <p className="text1">
+                Birthday Card <br />
+                Advanced | ChatBot
+              </p>
             </div>
             <div>
-              <img src={Project14} alt="Picture14" /> The Lion and the Mouse
-              Part 1
+              <img src={Project14} alt="Picture14" />
+              <p className="text1">
+                The Lion and the Mouse <br />
+                Advanced | Augmented Reality
+              </p>
             </div>
             <div>
-              <img src={Project15} alt="Picture15" /> The Lion and the Mouse
-              Part 2
+              <img src={Project15} alt="Picture15" />
+              <p className="text1">
+                The Lion and the Mouse Part 2 <br />
+                Advanced | Augmented Reality
+              </p>
             </div>
           </div>
         </div>
