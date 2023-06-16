@@ -3,8 +3,8 @@ import Content from "./component/Content.js";
 import SideFilter from "./component/SideFilter";
 import Header from "./component/Header.js";
 import BottomSection from "./component/BottomSection";
-import Navbar from "./gitPulls/mission-x-frontend-2305-t1/src/common/Navbar";
-import Footer from "./gitPulls/mission-x-frontend-2305-t1/src/common/Footer";
+import Navbar from "./component/common/Navbar";
+import Footer from "./component/common/Footer";
 
 export default function App() {
   return (

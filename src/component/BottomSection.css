@@ -5,7 +5,7 @@
   align-items: center;
   text-align: center;
   margin-top: 150px;
-  margin-left: 1155px;
+  margin-left: 1140px;
   margin-bottom: 150px;
 }
 
@@ -19,4 +19,5 @@
   border-color: #e3ab32;
   box-shadow: none;
   padding: 15px;
+  cursor: pointer;
 }

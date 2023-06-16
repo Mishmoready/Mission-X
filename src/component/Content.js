@@ -23,14 +23,13 @@ export default function Content() {
     <div className="stPrLiCo">
       {/* Created few buttons for the difficulty filters and show per page */}
       <div className="stPrLiCoMain">
-        <div stPrLiCoSquareContainerWrapper>
+        <div className="stPrLiCoSquareContainerWrapper">
           <div className="stPrLiCoTopBars">
             {/* Difficulty Bars */}
             <div className="stPrLiCoDifficultyFilterBars">
-              <button onClick="btn stPrLiCoBeginner">Beginner </button>
-              <button onClick="btn stPrLiCoIntermediate>">Intermediate </button>
+              <button onClick="btn stPrLiCoBeginner">Beginner</button>
+              <button onClick="btn stPrLiCoIntermediate>">Intermediate</button>
               <button onClick="btn stPrLiCoAdvanced">Advanced</button>
-              <button onClick="btn stPrLiCoUnknown">???</button>
             </div>
             {/* Created Show Filter Bars */}
             <div className="stPrLiCoShowFilterBars">
@@ -44,7 +43,7 @@ export default function Content() {
           <div className="stPrLiCoSquareContainer">
             <div className="stPrLiCoInnerSquareContainer">
               <img src={Project01} alt="Picture1" className="image1" />
-              <p className="text1">
+              <p className="stPrLiCoInSqCoText1">
                 Introduction
                 <br />
                 Beginner | Animation
@@ -52,107 +51,101 @@ export default function Content() {
             </div>
             <div>
               <img src={Project02} alt="Picture2" />
-              <p className="text1">
+              <p className="stPrLiCoInSqCoText1">
                 My Birthday
                 <br />
                 Beginner | Animation
               </p>
             </div>
             <div>
-              <img src={Project03} alt="Picture3" />{" "}
-              <p className="text1">
+              <img src={Project03} alt="Picture3" />
+              <p className="stPrLiCoInSqCoText1">
                 10 Block Challenge
                 <br />
                 Beginner | Animation
               </p>
             </div>
             <div>
-              <img src={Project04} alt="Picture4" /> Build a band{" "}
-              <p className="text1">
-                My Birthday
-                <br />
+              <img src={Project04} alt="Picture4" />
+              <p className="stPrLiCoInSqCoText1">
+                Build a band <br />
                 Beginner | Animation
               </p>
             </div>
             <div>
-              <img src={Project05} alt="Picture5" /> The Bear and the Monkey{" "}
-              <p className="text1">
-                My Birthday
-                <br />
+              <img src={Project05} alt="Picture5" />
+              <p className="stPrLiCoInSqCoText1">
+                The Bear and the Monkey <br />
                 Beginner | Animation
               </p>
             </div>
             <div>
-              <img src={Project06} alt="Picture6" /> Debugging{" "}
-              <p className="text1">
-                My Birthday
-                <br />
+              <img src={Project06} alt="Picture6" />
+              <p className="stPrLiCoInSqCoText1">
+                Debugging <br />
                 Beginner | Animation
               </p>
             </div>
             <div>
-              <img src={Project07} alt="Picture7" /> About me{" "}
-              <p className="text1">
-                My Birthday
-                <br />
-                Beginner | Animation
+              <img src={Project07} alt="Picture7" />
+              <p className="stPrLiCoInSqCoText1">
+                About me <br />
+                Intermediate | Science
               </p>
             </div>
             <div>
-              <img src={Project08} alt="Picture8" /> I am here!{" "}
-              <p className="text1">
-                My Birthday
-                <br />
-                Beginner | Animation
+              <img src={Project08} alt="Picture8" />
+              <p className="stPrLiCoInSqCoText1">
+                I am here! <br />
+                Intermediate | Computer Science
               </p>
             </div>
             <div>
-              <img src={Project09} alt="Picture9" /> Funny Faces{" "}
-              <p className="text1">
-                My Birthday
-                <br />
-                Beginner | Animation
+              <img src={Project09} alt="Picture9" />
+              <p className="stPrLiCoInSqCoText1">
+                Funny Faces <br />
+                Intermediate | Music
               </p>
             </div>
             <div>
               <img src={Project10} alt="Picture10" />
-              <p className="text1">
+              <p className="stPrLiCoInSqCoText1">
                 It Tickles <br />
-                Beginner | Animation
+                Advanced | Language
               </p>
             </div>
             <div>
               <img src={Project11} alt="Picture11" />
-              <p className="text1">
+              <p className="stPrLiCoInSqCoText1">
                 Penguin in a Desert <br />
                 Intermediate | Game
               </p>
             </div>
             <div>
               <img src={Project12} alt="Picture12" />
-              <p className="text1">
+              <p className="stPrLiCoInSqCoText1">
                 Time Travel <br />
                 Intermediate | Game
               </p>
             </div>
             <div>
               <img src={Project13} alt="Picture13" />
-              <p className="text1">
+              <p className="stPrLiCoInSqCoText1">
                 Birthday Card <br />
                 Advanced | ChatBot
               </p>
             </div>
             <div>
               <img src={Project14} alt="Picture14" />
-              <p className="text1">
+              <p className="stPrLiCoInSqCoText1">
                 The Lion and the Mouse <br />
                 Advanced | Augmented Reality
               </p>
             </div>
             <div>
               <img src={Project15} alt="Picture15" />
-              <p className="text1">
-                The Lion and the Mouse Part 2 <br />
+              <p className="stPrLiCoInSqCoText1">
+                The Lion and the Mouse Part 2<br />
                 Advanced | Augmented Reality
               </p>
             </div>

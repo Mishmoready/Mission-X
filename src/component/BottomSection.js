@@ -2,11 +2,14 @@ import React from "react";
 import "./BottomSection.css";
 
 export default function BottomSection() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <div className="stPrLiCoBottomSection">
       <button
         className="stPrLiCoButton"
-        onClick="backToTop"
+        onClick={scrollToTop}
         id="stPrLiCoButton"
       >
         {"back To Top".toUpperCase()}
