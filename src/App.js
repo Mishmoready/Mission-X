@@ -5,7 +5,6 @@ import Header from "./component/Header.js";
 import BottomSection from "./component/BottomSection";
 import Navbar from "./component/common/Navbar";
 import Footer from "./component/common/Footer";
-import ContentTable from "./component/ContentTable";
 
 export default function App() {
   return (
@@ -20,7 +19,6 @@ export default function App() {
           <Content></Content>
         </div>
         <BottomSection></BottomSection>
-        <ContentTable></ContentTable>
         <Footer></Footer>
       </div>
     </div>

@@ -1,8 +1,3 @@
-/* stPrLiCo = studentProjectLibraryContent */
-/* .stPrLiCo {
-  margin-right: 300px;
-} */
-
 .stPrLiCoTitle {
   text-transform: uppercase;
   margin-left: 20px;
@@ -13,6 +8,7 @@
   justify-content: center;
 }
 
+/* used to create square containers, then mostly template columns */
 .stPrLiCoSquareContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -42,7 +38,6 @@
 
 .stPrLiCoShowFilterBars {
   text-transform: uppercase;
-  margin-right: 10px;
 }
 
 .stPrLiCoTopBars {
@@ -63,23 +58,25 @@
   margin-left: 10px;
 }
 
-/* .stPrLiCoDifficultyFilterBars {
+.stPrLiCoDifficultyFilterBars {
   display: flex;
   flex-direction: row;
   align-items: center;
-} */
+}
 
-/* .stPrLiCoDifficultyFilterBars {
-  background-color: #f6eff3;
-  border: none;
-  text-align: center;
-  color: #767676;
-  /* font-size: 20px;
+.stPrLiCoShowFilterBars .stPrLiCoDifficultyFilterBars,
+button {
+  background-color: #c7c1c179;
+  color: #454343dd;
+  border: 10px;
+  font-size: 14px;
   transition: 0.3s;
-  border-radius: 3px; 
-}*/
+  border-radius: 3px;
+  padding: 2px 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
 
-.stPrLiCoIntermediate {
-  border-right-style: solid;
-  border-left-style: solid;
+.stPrLiCoShowFilterBars p {
+  transform: translateX(-50%);
 }
